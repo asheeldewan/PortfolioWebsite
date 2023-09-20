@@ -1,0 +1,786 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* **************************************** */
+         /* navbar section */
+/* ******************************************** */
+nav{
+    width: 100%;
+    display: flex;
+    background-color: rgb(6, 34, 27);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-shadow: 4px 4px 4px 4px rgba(44, 43, 43, 0.438);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 20px;
+    color: #fff;
+    
+    
+
+}
+
+nav #click{
+    display:none;
+}
+
+nav #nav-link{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 30px;
+}
+
+nav ul li button:last-child{
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(24, 24, 117);
+    color: #fff;
+    font-weight: 22px;
+}
+
+nav ul li button:last-child:hover{
+    background-color: rgb(51, 51, 133);
+    transition: all ease 0.5s;
+
+}
+
+nav ul a{
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all ease 0.5s;
+}
+
+nav ul a:hover,
+nav ul a:active{
+    color: rgb(230, 215, 5);
+}
+
+/* **************************************** */
+           /* response section */
+/* ******************************************* */
+
+
+@media(max-width:768px){
+    nav #nav-link{
+        display: block;
+
+    }
+
+    nav ul{
+        position: fixed;
+        top: 70px;
+        left:100%;
+        background-color: rgb(6, 34, 27);
+        height: 100vh;
+        top: 74x;
+        width: 100%;
+        display: block;
+        transition: all ease 0.5s;
+        line-height: 20px;
+        padding-top: 100px;
+    }
+
+
+    nav #click:checked ~ ul{
+        left: 0;
+
+    }
+
+    nav #click:checked ~ #nav-link i::before{
+        content:"\f00d";
+    }
+
+    nav ul li{
+        margin: 40px 0;
+        text-align: center;
+        font-size: 25px;
+    }
+    .maincontainer1 {
+      padding: 0px 100px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: auto;
+
+    }
+    .portfolio-section{
+        display: flex;
+         justify-content: center; 
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        cursor: pointer;
+            flex-wrap: wrap;}
+    }
+
+    
+    .about p{
+        padding: 0px px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        display: contents;
+        
+    }
+    .maincontainer1 {
+        padding: 0px 50px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        display: inline;
+
+    }
+        
+    .Services1{
+        display: block;
+        flex-wrap: wrap;
+
+    }
+    .btton{
+       width: 28%;
+        
+    }
+    
+    
+/* ******************************************** */
+            /* home section */
+ /* **********************************************            */
+
+.maincontainer1 img{
+    width: 430px;
+   display: flex;
+   justify-content: center;
+   border-radius: 15px;
+   cursor: pointer;
+   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.438);
+   border: 4px dotted black;
+   margin-top: 20px;
+   
+   
+}
+#section{
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 45px;
+    color:rgb(7, 27, 27) ;
+    font-weight: 50px;
+
+}
+
+
+.maincontainer1{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap; 
+display: flex;
+justify-content: center;
+padding: 0 20px;
+margin-top: 50px;
+
+}
+
+.home{
+   padding: 0 30px 0 60px;
+   margin: 10px 15px;
+   text-align: center;
+}
+
+.maincontainer1 h2{
+   font-size: 33px;
+   font-weight: 900;
+   text-align:start;
+}
+
+.maincontainer1 h3{
+   font-size: 22px;
+   margin-top: 9px;
+   text-align: justify;
+}
+
+.maincontainer1 p{
+   font-size: 22px;
+  line-height: 1.6;
+  margin-top: px;
+  text-align: justify;
+ 
+
+}
+.span{
+    color: rgb(3, 3, 245);
+}
+.btton{
+   padding: 9px 14px;
+   border: none;
+   border-radius: 4px;
+   background-color: rgb(47, 47, 192);
+   color: white;
+   font-size: medium;
+   margin-top: 20px; 
+   justify-content: flex-start;
+   align-items: flex-start;
+   margin-right: 450px;
+   
+   
+
+}
+
+
+
+.btton:hover{
+   background-color: rgb(22, 22, 173);
+   transition: all ease 0.5s;
+   cursor: pointer;
+}
+
+.asheel{
+   color: rgb(12, 151, 42);
+}
+/* ******************************************* */
+         /* about section */
+/* **********************************************          */
+
+.maincontainer2{
+  margin-top: 100px;
+  background-color: rgb(9, 32, 32);
+  color: #f8f8f8;
+  padding: 40px;
+ 
+
+  
+}
+ .about h1{
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 40px;
+   text-decoration: underline;
+  
+   font-weight: 60px;
+   margin-bottom: 40px;
+   color: rgb(231, 231, 231);
+   width:100% ;
+  
+
+   
+   
+
+}
+
+.about p{
+font-size: 22px;
+font-family:'Montserrat', sans-serif;
+ text-align: center;
+margin-bottom: 30px;
+margin: 15px 80px;
+text-align: justify;
+
+}
+
+.bottam{
+   display: flex;
+   justify-content: center;
+   margin: auto;
+   align-items: center;
+   padding: 12px 45px;
+   margin-bottom: 30px;
+   margin-top: 30px;
+   background-color: rgb(13, 13, 170);
+   border: none;
+   border-radius: 7px;
+   color: rgb(255, 255, 255);
+   cursor: pointer;
+   text-transform: capitalize;
+   font-size: 15px;
+   
+}
+#logo{
+   margin-left: 5px;
+}
+
+.bottam:hover{
+   background-color: rgb(37, 37, 146);
+   transition: all ease 0.5s;
+}
+
+.maincard1{
+    height: 500px;
+    width: 50px;
+    background-color: aqua;
+}
+
+/* ************************************** */
+       /*services card1 section */
+/* **************************************** */
+#services-icon{
+    display: flex;
+    justify-content: center;
+    font-size: 110px;
+    padding-top: 40px;
+}
+.mainsection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+gap: 100px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(7, 27, 27);
+    margin-top: 40px;
+    text-decoration: underline;
+    /* background-color: rgb(14, 14, 56); */
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 50px;
+    
+
+}
+
+
+.Services1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.maincard1{
+    height: 540px;
+    width: 350px;
+    background-color: rgb(249, 249, 255);
+    border-radius: 10px;
+    /* justify-content: center; */
+    /* margin: auto; */
+    margin-bottom: 30px;
+    margin-top: 60px;
+    box-shadow: 0px 3px 3px 3px rgba(65, 62, 62, 0.171);
+    cursor: pointer;
+
+
+  
+}
+
+
+.maincard1 h3{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.maincard1 p{
+    text-align: center;
+    margin-top: 12px;
+    padding: 0 30px;
+    font-size: 18px;
+    line-height: 1.7;
+    word-spacing: 6px;
+    
+}
+
+#button{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    border: 1px solid black;
+
+}
+
+.card1 a{
+    text-decoration: none;
+}
+
+
+.maincard1:hover{
+    background-color:rgb(250, 250, 250);
+    box-shadow: 4px 5px 4px 5px rgba(65, 62, 62, 0.576);
+    transform: scale(1.02);
+    transition: all ease 0.5s;
+}
+
+#button:hover{
+    background-color: rgb(236, 239, 241);
+    transition: all ease 0.4s;
+    border: 1px solid blue;
+}
+
+
+/* **************************************** */
+       /* services card 2 */
+/* ***************************************** */
+
+ #paragraph{
+    text-align: center;
+    margin: 10px 20px;
+   
+}
+
+/* **************************************** */
+       /* services card 3*/
+/* ***************************************** */
+
+#parag{
+   text-align: center;
+   margin: 10px 15px;
+}
+
+/* ******************************************** */
+         /* skills section */
+ /* ********************************************** */
+
+.skills-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 100px;
+    cursor: pointer;
+    flex-wrap: wrap;
+  
+ 
+}
+ #h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-top: 50px;
+    font-weight: bold;
+ }
+ .card4{
+    width: 190px;
+    background-color: #e65127;
+    padding: 25px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    box-shadow: 3px 3px 3px rgba(5, 5, 5, 0.37);
+    
+
+ }
+  #h3{
+    color: #f3f3f3;
+    text-transform: uppercase;
+    font-weight: 400;
+    
+ }
+
+ 
+
+.card4 i{
+    display: flex;
+    justify-content: center;
+    font-size: 90px;
+    padding-top: 10px;
+    color: #faf5f5;
+    margin-top: -10px;
+
+ }
+
+ .card4:hover{
+    transform: translateY(-9px);
+    transition: all ease 0.5s;
+ }
+ /* ********************************** */
+       /* card 2 */
+   /* *********************************** */
+   #card4{
+    background-color: #0c73b8;
+    
+   }
+
+
+   /* *********************************** */
+       /* card 3 */
+     /* ************************************ */
+
+  #card5{
+    background-color: #E7A328;
+  }
+
+ 
+/* **************************************** */
+        /* portfolio section */
+   /* ************************************** */
+
+   .portfolio-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 70px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    
+    
+    
+    
+    
+    
+   }
+   .portfolio{
+    margin-top: 50px;
+    flex-wrap: wrap;
+   }
+   .portfolio:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.5s;
+    
+   }
+
+    .portfolio img{
+    height: 250px;
+    width: 400px;
+    margin-top: 59px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.247);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+   }
+   
+
+   #head{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-decoration: underline;
+    /* margin-top: 50px; */
+    font-weight: bold;
+    margin-top: 40px;
+
+   }
+
+   #porfolioh2{
+    text-align: center;
+    border: 1px solid white;
+    background-color: #dfdfdf;
+    text-transform: capitalize;
+    margin-top: -8px;
+    padding: 20px;
+   
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.247);
+
+   }
+
+   .video{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid black;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 6px rgba(3, 3, 3, 0.507);
+    flex-wrap: wrap;
+    border-radius: 5px;
+    
+   }
+
+   .video:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.5s;
+
+   }
+
+  /* *********************************** */
+     /* footer section */
+     /* ************************************ */
+
+     .footer{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        background-color: black;
+        padding: 60px 90px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        
+    
+     }
+
+     .footer h3{
+        color:rgb(241, 234, 234) ;
+            text-transform: uppercase;
+            margin-top: -30px;
+            margin-bottom: 10px;
+          
+     }
+     .fooeter1 ul li{
+        padding: 2px;
+        text-transform: capitalize;
+        font-size: 15px;
+        
+
+        
+     }
+    .fooeter1 ul li a{
+        text-decoration: none;
+        color: rgba(153, 153, 153, 0.541);
+        
+
+    }
+
+    .footer a:hover{
+        color: #fff;
+        transition: all ease 0.5s;
+    }
+        
+    .paragra p{
+        color: rgb(153, 153, 153, 0.541);
+        text-align: center;
+        padding: 20px 0;
+        background-color: black;
+        font-size: 15px;
+        font-weight: 10px;
+       
+    }
+    #asheel{
+        color: #0c73b8;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    #paragra{
+        font-size: 25px;
+        padding-right: 30px;
+        font-weight: 700;
+        color: blue;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    /* ************************ */
+          /* social icons  */
+       /* **********************    */
+        .social-icons h3{
+            color:rgb(255, 252, 252) ;
+            text-transform: uppercase;
+            margin-top: -30px;
+        }
+       .social-icons i{
+        color: #0c73b8;
+        font-size: 30px;
+        margin:0px 5px ;
+        width: 20px;
+        height: 20px;
+        padding: 6px;
+        cursor: pointer;
+        border-radius: 50%;
+        text-align: center;
+   
+        
+       }
+
+    
+       #social-icons i:hover{
+        transition: all ease 0.5s;
+        transform: scale(1.04);
+       }
+
+       #facebook{
+        color: rgb(255, 255, 255);
+        background-color: blue;
+        
+       
+       }
+       #facebook:hover{
+        color:rgb(255, 255, 255);
+        background-color: rgb(22, 22, 170);
+        
+       
+       }
+     
+
+       #youtube{
+        background-color: red;
+        color: #d6d0d0;
+       }
+
+       #youtube:hover{
+        background-color: rgb(214, 30, 30);
+        color: #d6d0d0;
+       }
+
+       
+       #instagram{
+        background-color: rgb(223, 15, 119);
+        color: #d6d0d0;
+       }
+       #instagram:hover{
+        background-color: rgb(192, 15, 103);
+        color: #d6d0d0;
+       }
+
+
+       #twitter{
+        background-color: #138fb4;
+        color: #d6d0d0;
+       }
+       #twitter:hover{
+        background-color: #1267b6;
+        color: #d6d0d0;
+       }
+       .social-icons p{
+        color: #868484;
+        margin-top: 40px;
+        font-size: 16px;
+       }
+
+       #battan{
+        margin-top: 10px;
+        padding: 10px 23px;
+        background-color:rgb(13, 13, 168) ;
+        border: none;
+        border-radius: 3px;
+        
+        
+       }
+      
+
+      #battan a{
+        text-decoration: none;
+        color: #fff;
+      }
+
+      #battan:hover{
+        background-color: #100cf3;
+        transition: all ease 0.5s;
+        transform: scale(1.01);
+      }
